@@ -1,0 +1,110 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+}
+.navbar  {
+    background-color: #4580ff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.navbar > a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 30px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.main {
+    padding-top: 60px;
+    padding: 80px;
+    background-image: url(asset/abstract-blur-shopping-mall-retail-store-interior.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* Menentukan konteks untuk elemen pseudo */
+    z-index: 1; /* Menyusun posisi di atas overlay */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Menambahkan overlay transparan di atas gambar latar belakang */
+.main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3); /* Overlay dengan transparansi 30% */
+    z-index: -1; /* Menempatkan overlay di bawah konten */
+}
+
+
+.halaman-utama {
+    font-size: 60px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Bayangan tetap tidak transparan */
+    background-color: rgba(255, 255, 253); /* Latar belakang putih dengan 20% transparansi */
+    width: fit-content;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+.caption {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.link {
+    padding: 20px; 
+    background-color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease-in-out; /* Pindahkan transition di sini */
+}
+a:hover {
+    transform: scale(1.2); /* Membesarkan elemen dengan faktor 1.2 */
+    font-size: 30px; /* Mengubah ukuran font jika diperlukan */
+}
+.isi-tulisan {
+    font-size: 65px;
+    background-color: #4580ff;
+    width: fit-content;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.Katalog {
+    display: flex;
+    padding: 60px;
+    background-color: #4580ff;
+}
+.carousel-item img {
+    border-radius: 80px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+.caption2 {
+    color: white;
+    padding: 20px;
+    font-size: 60px;
+    font-weight: 700;
+}
+.menu { 
+    background-color: #4580ff;
+    padding: 40px;
+}
+.menus {
+    padding: 30px;
+    font-size: 60px;
+    background-color: white;
+    border-radius: 40px;
+    width: 840px;
+    margin-bottom: 30px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
